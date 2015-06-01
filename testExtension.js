@@ -1,5 +1,5 @@
 
-n(ext) {
+(function(ext) {
     // Cleanup function when the extension is unloaded
     ext._shutdown = function() {};
 
@@ -8,7 +8,7 @@ n(ext) {
     ext._getStatus = function() {
         return {status: 2, msg: 'Ready'};
     };
-
+  
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
