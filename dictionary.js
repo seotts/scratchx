@@ -1,3 +1,4 @@
+
 (function(ext) {
     // Cleanup function when the extension is unloaded
     ext._shutdown = function() {};
@@ -11,19 +12,12 @@
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-		['', 'i am sarah', 's'],
-//		['', 'use English dictionary','test'],
-//		['', 'use %m.languages to English dictionary', 'test']
-//		['r', 'definition of %s', 'test'],
+                // Block type, block name, function name, param1 default value, param2 default value
+            ['r', '%n ^ %n', 'power', 2, 3],
         ]
-
-	//menus: {
-	//	languages: ['Spanish', 'Polish', 'Cherokee'],
-	//}
     };
-	
-   
 
     // Register the extension
-    ScratchExtensions.register('Dictionary extension', descriptor, ext);
+    ScratchExtensions.register('testing', descriptor, ext);
 })({});
+
