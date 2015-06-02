@@ -11,14 +11,15 @@
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-		['', 'use English dictionary','test'],
-		['', 'use %m.languages to English dictionary', 'test']
-		['r', 'definition of %s', 'test'],
+		['', 'i am sarah', 's'],
+//		['', 'use English dictionary','test'],
+//		['', 'use %m.languages to English dictionary', 'test']
+//		['r', 'definition of %s', 'test'],
         ]
 
-	menus: {
-		languages: ['Spanish', 'Polish', 'Cherokee'],
-	}
+	//menus: {
+	//	languages: ['Spanish', 'Polish', 'Cherokee'],
+	//}
     };
 	
    
