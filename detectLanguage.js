@@ -10,12 +10,12 @@
     };
   
     ext._get_lang = function(text){
-	$.ajax({
-		url: 'http://ws.detectlanguage.com/0.2/detect?q='+text+ '&key=demo',
-		dataType:'json',
-		success: function(language_results){
-			langCode = language_results['data']['detections'][0]['language'];
-			callback(langCode);
+//	$.ajax({
+//		url: 'http://ws.detectlanguage.com/0.2/detect?q='+text+ '&key=demo',
+//		dataType:'json',
+//		success: function(language_results){
+//			langCode = language_results['data']['detections'][0]['language'];
+//			callback(langCode);
 		}
 	});
     };
