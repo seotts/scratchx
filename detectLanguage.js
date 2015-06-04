@@ -23,7 +23,7 @@
     var descriptor = {
         blocks: [
 		// Block type, block name, function name, param1 default value, param2 default value
-            ['r', 'language of %s', 'get_lang','Hello world"],
+            ['r', 'language of %s', 'get_lang','Hello world'],
         ]
     };
 
