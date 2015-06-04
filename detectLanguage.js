@@ -9,7 +9,7 @@
         return {status: 2, msg: 'Ready'};
     };
   
-    ext._get_lang = function(text){
+    ext.get_lang = function(text){
 //	$.ajax({
 //		url: 'http://ws.detectlanguage.com/0.2/detect?q='+text+ '&key=demo',
 //		dataType:'json',
