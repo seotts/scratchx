@@ -12,16 +12,15 @@
     };
   
     ext.get_lang = function(text){
-	langCode = 'en';
-	return langCode;
-//	$.ajax({
-//		url: 'http://ws.detectlanguage.com/0.2/detect?q='+text+'&key=8bf13d378daa410481e35ba046d47d3a',
-//		dataType:'json',
-//		success: function(language_results){
-//			langCode = 'en'
-//			callback(langCode);
-//		}
-//	});
+	
+	$.ajax({
+		url: 'http://ws.detectlanguage.com/0.2/detect?q='+text+'&key=8bf13d378daa410481e35ba046d47d3a',
+		dataType:'json',
+		success: function(language_results){
+			langCode = 'en'
+			callback(langCode);
+		}
+	});
     };
     // Block and block menu descriptions
     var descriptor = {
