@@ -10,14 +10,14 @@
     };
   
     ext.get_lang = function(text){
-//	$.ajax({
-//		url: 'http://ws.detectlanguage.com/0.2/detect?q='+text+ '&key=demo',
-//		dataType:'json',
-//		success: function(language_results){
-//			langCode = language_results['data']['detections'][0]['language'];
-//			callback(langCode);
-//		}
-//	});
+	$.ajax({
+		url: 'http://ws.detectlanguage.com/0.2/detect?q='+text+ '&key=demo',
+		dataType:'json',
+		success: function(language_results){
+			langCode = 'en'
+			callback(langCode);
+		}
+	});
     };
     // Block and block menu descriptions
     var descriptor = {
@@ -28,5 +28,5 @@
     };
 
     // Register the extension
-    ScratchExtensions.register('testing', descriptor, ext);
+    ScratchExtensions.register('Detect Language', descriptor, ext);
 })({});
