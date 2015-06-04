@@ -15,7 +15,7 @@
 	
 	$.ajax({
 		url: 'http://ws.detectlanguage.com/0.2/detect?q='+text+'&key=8bf13d378daa410481e35ba046d47d3a',
-		dataType:'json',
+		dataType:'jsonp',
 		success: function(language_results){
 			console.log('succeessssss');
 			langCode = 'en'
