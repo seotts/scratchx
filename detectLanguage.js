@@ -16,7 +16,7 @@
 //		success: function(language_results){
 //			langCode = language_results['data']['detections'][0]['language'];
 //			callback(langCode);
-		}
+//		}
 //	});
     };
     // Block and block menu descriptions
