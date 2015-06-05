@@ -15,7 +15,7 @@
 	
     var langNames;
     
-    function getLanguagesFromCodes(languageCode){
+    ext.getLanguagesFromCodes= function(languageCode){
 	$.ajax({
 		url: "https://translate.yandex.net/api/v1.5/tr.json/getLangs?key="+apiKey+"&ui="+languageCode+"&callback=myCallback",
 		datatype:'jsonp',
