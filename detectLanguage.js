@@ -13,18 +13,8 @@
         return {status: 2, msg: 'Ready'};
     };
 	
-    var langNames;
+    var langNames={"ar":"Arabic","az":"Azerbaijani","be":"Belarusian","bg":"Bulgarian","bs":"Bosnian","ca":"Catalan","cs":"Czech","da":"Danish","de":"German","el":"Greek","en":"English","es":"Spanish","et":"Estonian","fa":"Persian","fi":"Finnish","fr":"French","he":"Hebrew","hr":"Croatian","hu":"Hungarian","hy":"Armenian","id":"Indonesian","is":"Icelandic","it":"Italian","ja":"Japanese","ka":"Georgian","ko":"Korean","lt":"Lithuanian","lv":"Latvian","mk":"Macedonian","ms":"Malay","mt":"Maltese","nl":"Dutch","no":"Norwegian","pl":"Polish","pt":"Portuguese","ro":"Romanian","ru":"Russian","sk":"Slovak","sl":"Slovenian","sq":"Albanian","sr":"Serbian","sv":"Swedish","th":"Thai","tr":"Turkish","tt":"Tatar","uk":"Ukrainian","vi":"Vietnamese","zh":"Chinese"};
     
-    ext.getLanguagesFromCodes= function(languageCode){
-	$.ajax({
-		url: "https://translate.yandex.net/api/v1.5/tr.json/getLangs?key="+apiKey+"&ui="+languageCode+"&callback=myCallback",
-		datatype:'jsonp',
-		success: function(langNames_res){
-			langNames = langNames_res["langs"];
-		}
-	});
-
-    }
     getLanguagesFromCodes('en');
     ext.get_lang = function(text, callback){
 	console.log('setting key');
