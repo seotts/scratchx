@@ -14,8 +14,8 @@
     };
 	
     var langNames;
-
-    function getLanguagesFromCodes(language, code){
+    
+    function getLanguagesFromCodes(languageCode){
 	$.ajax({
 		url: "https://translate.yandex.net/api/v1.5/tr.json/getLangs?key="+apiKey+"&ui="+language+"&callback=myCallback",
 		datatype:'jsonp',
@@ -25,6 +25,7 @@
 	});
 
     }
+    getLanguagesFromCodes('en');
     ext.get_lang = function(text, callback){
 	console.log('setting key');
 //	var apiKey="trnsl.1.1.20150605T132039Z.c660d54664d42d1d.3e02378e3b4f321ba39e2dee119909f8b402292a";
