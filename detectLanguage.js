@@ -1,7 +1,7 @@
 
 (function(ext) {
     console.log('in function');
-    var ext = this;i
+    var ext = this;
     var apiKey="trnsl.1.1.20150605T132039Z.c660d54664d42d1d.3e02378e3b4f321ba39e2dee119909f8b402292a";
 
     // Cleanup function when the extension is unloaded
