@@ -21,7 +21,7 @@
 		url: urltext,		
 		dataType:'jsonp',
 		success: function(language_results){
-			langCode = 'en'
+			langCode = language_results["lang"];
 			callback(langCode);
 		}
 	});
