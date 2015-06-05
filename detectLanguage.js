@@ -44,7 +44,7 @@
 	
     menus: {
   	langs: names,
-    };
+    }
 
     // Register the extension
     ScratchExtensions.register('Detect Language', descriptor, ext);
