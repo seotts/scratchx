@@ -14,7 +14,8 @@
     ext.get_lang = function(text){
 	//console.log('setting key');
 	var apiKey="trnsl.1.1.20150605T132039Z.c660d54664d42d1d.3e02378e3b4f321ba39e2dee119909f8b402292a";
-	//console.log('starting ajax');	
+	//console.log('starting ajax');
+	return "this is a test";	
 	$.ajax({
 		url: "https://translate.yandex.net/api/v1.5/tr.json/detect?key="+APIkey+"&text="+text+"&callback=myCallback",		
 		dataType:'jsonp',
