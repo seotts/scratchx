@@ -12,10 +12,10 @@
     };
   
     ext.get_lang = function(text){
-	apiKey="trnsl.1.1.20150605T132039Z.c660d54664d42d1d.3e02378e3b4f321ba39e2dee119909f8b402292a";	
+	var apiKey="trnsl.1.1.20150605T132039Z.c660d54664d42d1d.3e02378e3b4f321ba39e2dee119909f8b402292a";	
 	$.ajax({
-	//	url: "https://translate.yandex.net/api/v1.5/tr.json/detect?key="+APIkey+"&text="+text+"&callback=myCallback",
-		url: "https://translate.yandex.net/api/v1.5/tr.json/detect?key=trnsl.1.1.20150605T132039Z.c660d54664d42d1d.3e02378e3b4f321ba39e2dee119909f8b402292a&text=Hello+world&callback=myCallback"
+		url: "https://translate.yandex.net/api/v1.5/tr.json/detect?key="+APIkey+"&text="+text+"&callback=myCallback",
+		
 		dataType:'jsonp',
 		success: function(language_results){
 			console.log('succeessssss');
